@@ -14,6 +14,10 @@ Plataforma para el análisis y la optimización del consumo energético (**Energ
 
 ---
 
+> **Copia personal** del repositorio original del equipo: [No-Country-simulation/G9-LATAM-Team-48](https://github.com/No-Country-simulation/G9-LATAM-Team-48).
+>
+> **Jorge Martínez** · Full Stack Developer del Team 48. Desarrollé el backend con Spring Boot, la integración con el servicio de ML (FastAPI), el frontend en React y el despliegue. El entrenamiento del modelo lo hizo otro integrante del equipo.
+
 ## Estructura del repositorio
 
 | Carpeta | Descripción |
