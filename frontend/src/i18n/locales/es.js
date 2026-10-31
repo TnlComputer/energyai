@@ -48,6 +48,8 @@ export default {
     skipped: 'Omitido',
     queued: 'En cola',
     skipToContent: 'Saltar al contenido',
+    serverWaking: 'Levantando los servicios, aguarde…',
+    serverWakingHint: 'Estuvo inactivo y puede tardar hasta un minuto. No hace falta recargar.',
   },
   a11y: {
     skipToNav: 'Saltar al menú',

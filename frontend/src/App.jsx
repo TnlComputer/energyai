@@ -14,6 +14,8 @@ import {
   setStoredPagina,
 } from './utils/session'
 import Loader from './components/Loader'
+import BackendWakeBanner from './components/BackendWakeBanner'
+import { waitForBackend } from './services/api'
 
 const Consumos = lazy(() => import('./pages/Consumos'))
 const HistoriaConsumos = lazy(() => import('./pages/HistoriaConsumos'))
@@ -71,6 +73,11 @@ function App() {
 
   const setPaginaRef = useRef(setPagina)
   setPaginaRef.current = setPagina
+
+  // Despierta el backend apenas carga la app, antes de que el usuario haga algo
+  useEffect(() => {
+    void waitForBackend()
+  }, [])
 
   useEffect(() => {
     function onSessionExpired() {
@@ -202,6 +209,7 @@ function App() {
           >
             <div key={`view-${sessionEpoch}-${pagina}`}>{renderPagina()}</div>
           </MainLayout>
+          <BackendWakeBanner />
         </HistoriaFiltersProvider>
       </DashboardFiltersProvider>
     </NavigationProvider>

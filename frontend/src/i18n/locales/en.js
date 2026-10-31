@@ -48,6 +48,8 @@ export default {
     skipped: 'Skipped',
     queued: 'Queued',
     skipToContent: 'Skip to content',
+    serverWaking: 'Starting services, please wait…',
+    serverWakingHint: 'It was idle and may take up to a minute. No need to reload.',
   },
   a11y: {
     skipToNav: 'Skip to menu',
