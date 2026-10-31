@@ -3,11 +3,11 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "http://163.176.248.56:8080/api/:path*"
+      "destination": "https://energyai-hked.onrender.com/api/:path*"
     },
     {
       "source": "/actuator/:path*",
-      "destination": "http://163.176.248.56:8080/actuator/:path*"
+      "destination": "https://energyai-hked.onrender.com/actuator/:path*"
     }
   ],
   "headers": [
